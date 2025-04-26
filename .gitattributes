@@ -1,1 +1,10 @@
+.zip filter=lfs diff=lfs merge=lfs -text
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Mark the following files for Git LFS
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+
