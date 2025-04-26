@@ -17,4 +17,3 @@ jobs:
 
       - name: Run a simple script
         run: echo "Hello from GitHub Actions!"
-i
