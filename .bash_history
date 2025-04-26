@@ -465,3 +465,323 @@ git status
 git add .
 git commit -m "Resolved merge conflicts"
 git push origin master
+ls
+cd workflows/
+ls
+git add ci-cd-pipeline.yml
+git commit -m "Resolved merge conflicts"
+git add ci-cd-pipeline.yml
+git add .
+git commit -m "Resolved merge conflicts"
+git add ci-cd-pipeline.yml
+git add .
+git commit -m "Resolved merge conflicts"
+cd ..
+git add .
+git commit -m "Resolved merge conflicts"
+cd ..
+ls
+cd ec2-user/
+ls
+git add workflows
+ls
+git add workflows/
+git status
+git add -A
+git add workflows/
+git status
+git commit -m "Updated workflows pipeline only"
+git pull origin master --rebase
+chmod 600 ~/.ssh/id_rsa
+git pull origin master --rebase
+git push origin master
+vi .gitignore
+git rm -r --cached .terraform
+git commit -m "Removed .terraform directory from Git tracking"
+git push origin master
+push_with_lfs.sh
+vi push_with_lfs.sh
+chmod +x push_with_lfs.sh
+./push_with_lfs.sh
+git lfs --version
+git lfs track
+git lfs track "*.zip"
+git lfs ls-files
+\
+git lfs ls-files
+ls
+git lfs track "*.x5"
+git lfs untrack "*.x5"
+git add .gitattributes
+git commit -m "Untrack large file from Git LFS"
+git add .gitattributes
+git commit -m "Untrack large file from Git LFS"
+git add .   # This will add all modified and untracked files
+git add .  
+git commit -m "Untrack large file from Git LFS and stage other changes"
+git push origin master
+sudo apt-get install git-filter-repo
+sudo yum install python3-pip
+sudo pip3 install --upgrade git-filter-repo
+git filter-repo --version
+git filter-repo --path .terraform/providers/registry.terraform.io/hashicorp/aws/5.96.0/linux_amd64/terraform-provider-aws_v5.96.0_x5 --invert-paths
+git filter-repo --path .terraform/providers/registry.terraform.io/hashicorp/aws/5.96.0/linux_amd64/terraform-provider-aws_v5.96.0_x5 --invert-paths --force
+git push origin master --force
+git remote -v
+git remote add origin git@github.com:AMITSHARMA95/-aws-devops-project-NatWest-Group.git
+git push origin master --force
+git filter-repo --path .ssh/id_rsa --invert-paths
+git commit -am "Remove sensitive data from history"
+git push origin master --force
+ls
+git status
+git add workflows
+git commit -m "Update ci-cd-pipeline workflow"
+git add workflows/ci-cd-pipeline.yml
+git commit -m "Update ci-cd-pipeline workflow"
+git add workflows/ci-cd-pipeline.yml
+git commit -m "Update ci-cd-pipeline workflow"
+git restore --staged amit
+git add workflows/ci-cd-pipeline.yml
+git commit -m "Update ci-cd-pipeline workflow"
+git restore --staged amit
+ls
+cd amit/
+ls
+cd ..
+git add workflows/ci-cd-pipeline.yml
+git commit -m "Update ci-cd-pipeline workflow"
+git add workflows/ci-cd-pipeline.yml
+git commit -m "Update ci-cd-pipeline workflow"
+tree
+sudo yum install tree -y
+tree
+git status
+git add workflows/
+git commit -m "Update CI/CD pipeline workflow"
+git push origin master
+git remote add origin git@github.com:AMITSHARMA95/-aws-devops-project-NatWest-Group.git
+git push origin master
+ssh-keygen -t rsa -b 4096 -C "sharmaofficialamit7@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+git push origin master
+git commit -am "Fix CI/CD pipeline"
+git push origin master
+git commit -am "Fix CI/CD pipeline"
+git add workflows/ci-cd-pipeline.yml
+git rm --cached .ssh/id_rsa
+git commit -m "Fix CI/CD pipeline"
+git add workflows/ci-cd-pipeline.yml
+git commit -m "Fix CI/CD pipeline"
+git add workflows/ci-cd-pipeline.yml
+git status
+git add .
+git status
+git commit -m "Fix CI/CD pipeline"
+git push origin master
+git pull origin master --rebase
+git add <file>
+git add .
+git commit -m "Resolve merge conflicts"
+git push origin master
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch .ssh/id_rsa" --prune-empty --tag-name-filter cat -- --all
+git push origin --force
+.ssh/id_rsa
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch .ssh/id_rsa" --prune-empty --tag-name-filter cat -- --all
+git push origin --force
+.ssh/id_rsa
+ls
+tree
+git push --set-upstream origin master
+git pull origin master
+git push origin master --force
+git pull origin master --rebase
+git add <resolved_files>
+git add ,.
+git add .
+git rebase --continue
+git pull origin master --rebase
+git push origin master
+git log --oneline
+git checkout b5df8d2^ -- .gitattributes
+git checkout e449cad^ -- .bash_profile
+git checkout 73f1844^ -- .wget-hsts
+git checkout cd797cb^ -- push_with_lfs.sh
+git checkout 53c2ce2^ -- .bash_logout
+git checkout 8f84c50^ -- .bash_history
+git checkout b12b962^ -- .viminfo
+git add .gitattributes .bash_profile .wget-hsts push_with_lfs.sh .bash_logout .bash_history .viminfo
+git commit -m "Restore deleted files for CI/CD pipeline"
+git push origin master
+git checkout 299d93a -- .gitattributes
+git log --all -- .gitattributes
+git checkout <commit_hash> -- .gitattributes
+git add .
+[200~git add .
+git commit -m "Removed references to .gitattributes file"
+git push origin master
+touch .gitattributes
+vi .gitattributes
+[200~git add .gitattributes
+~
+git add .gitattributes
+git commit -m "Recreate .gitattributes file"
+git push origin master
+tree
+ls
+ls -h
+ls -a
+vi .gitattributes 
+git add .gitattributes
+git commit -m "Recreate .gitattributes file with LFS settings"
+git push origin master
+ls
+cd workflows/
+ls
+cat ci-cd-pipeline.yml/
+rm ci-cd-pipeline.yml/
+cd ci-cd-pipeline.yml/
+ls
+cd ..
+touch ci-cd-pipeline.yml
+
+cat ci-cd-pipeline.yml
+touch ci-cd-pipelines.yml
+ls
+vi ci-cd-pipelines.yml
+cd ..
+git add .github/workflows/ci-cd-pipelines.yml
+git add .workflows/ci-cd-pipelines.yml
+git add . workflows/ci-cd-pipelines.yml
+git commit -m "Fixed CI/CD pipeline configuration"
+git push origin master
+git revert 6b49b23
+vi recover_deleted_file.sh
+chmod +x recover_deleted_file.sh
+./recover_deleted_file.sh
+ls
+ls -a
+ls
+git add .
+git commit -m "Recovered missing files"
+git push origin master
+tree
+cd workflows/
+LS
+ls
+touch ci-cd.yml
+ls
+vi ci-cd.yml
+cd ..
+ls
+tree
+git add .github/workflows/ci-cd.yml
+git add workflows/ci-cd.yml
+git commit -m "Added event triggers to CI/CD pipeline"
+git push origin master
+tree
+rm .github/workflows/ci-cd-pipeline.yml
+git add .
+git commit -m "Deleted old broken workflow"
+git push origin master
+mkdir -p .github/workflows
+nano .github/workflows/ci-cd.yml
+mkdir -p .github/workflows
+
+git add .
+git commit -m "Added fresh CI/CD workflow"
+git push origin master
+vi ci-cd.yml
+git push origin master
+git add .
+git commit -m "Added fresh CI/CD workflow"
+git push origin master
+vi ci-cd.yml
+git push origin master
+git add .
+git commit -m "Fixed YAML syntax error in CI/CD pipeline"
+git push origin master
+vi .github/workflows/ci-cd.yml
+git add .
+git commit -m "Fixed YAML syntax error in CI/CD pipeline"
+git push origin master
+vi .github/workflows/ci-cd.yml
+tree
+ls
+mkdir -p .github/workflows
+mv ci-cd.yml .github/workflows/
+git add .github/workflows/ci-cd.yml
+git commit -m "Moved ci-cd.yml to correct location in .github/workflows/"
+git push origin master
+tree
+ls -a
+ls -h
+ls
+tree
+mkdir -p .github/workflows
+mv ci-cd.yml .github/workflows/
+mv workflows/ci-cd-pipeline.yml .github/workflows/
+mv workflows/ci-cd.yml .github/workflows/
+mv workflows/deploy.yml .github/workflows/
+tree
+ls -a
+rm -rf workflows/
+mkdir -p .github/workflows
+mv ci-cd.yml .github/workflows/
+mv workflows/ci-cd-pipeline.yml .github/workflows/
+mv workflows/ci-cd.yml .github/workflows/
+mv workflows/deploy.yml .github/workflows/
+tree
+ls
+mkdir -p .github/workflows
+tree
+mkdir .github/workflows
+mkdir -p .github/workflows
+tree -a
+ls
+cd amit
+ls
+tree
+tree .github
+cd..
+cd ..
+tree .github
+tree
+git add .github/
+git rm --cached .github/workflows/ci-cd-pipeline.yml
+git rm -f --cached .github/workflows/ci-cd-pipeline.yml
+git add .github/
+git commit -m "Fixed embedded git repository issue and re-added ci-cd-pipeline.yml"
+git push origin master
+cat [200~.github/workflows/~
+
+history
+clear
+  746  tree .github
+tree .github
+tree a
+tree
+mkdir .github/workflows
+find .github/workflows
+rm -r .github/workflows
+rm -rf .github
+mkdir -p .github/workflows
+cd .github/workflows/
+ls
+vi ci-cd-pipeline.yml
+vi ci-cd.yml
+vi deploy.yml
+git add .github
+tree
+ls
+cd ..
+ls
+cd.
+cd ..
+tree
+git add .github
+git commit -m "Re-created .github directory and added CI/CD workflow files"
+git push origin master
+tree

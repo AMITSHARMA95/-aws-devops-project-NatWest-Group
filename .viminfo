@@ -12,13 +12,27 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1745655956,,"wq"
+|2,0,1745666000,,"wq"
+:%d
+|2,0,1745665982,,"%d"
+:%D
+|2,0,1745665973,,"%D"
+:q!
+|2,0,1745662800,,"q!"
+:!Q
+|2,0,1745662787,,"!Q"
+:q
+|2,0,1745662783,,"q"
+::d%
+|2,0,1745662510,,":d%"
+:d%
+|2,0,1745662495,,"d%"
+::%d
+|2,0,1745662362,,":%d"
+:!q
+|2,0,1745654337,,"!q"
 :.q!
 |2,0,1745648763,,".q!"
-:!q
-|2,0,1745648701,,"!q"
-:q
-|2,0,1745648673,,"q"
 :.!Q
 |2,0,1745625726,,".!Q"
 
@@ -31,240 +45,586 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""1	LINE	0
+	i
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function2.lambda_handler"  # Assuming lambda_function2.py has a 'lambda_handler' function
+	  runtime       = "python3.8"
+	  filename      = "lambda_function_payload.zip"  # Reference to the zip file
+	  source_code_hash = filebase64sha256("lambda_function_payload.zip")
+	
+	
+|3,1,1,1,8,0,1745665982,"i","  role          = aws_iam_role.lambda_role.arn","  handler       = \"lambda_function2.lambda_handler\"  # Assuming lambda_function2.py has a 'lambda_handler' function","  runtime       = \"python3.8\"","  filename      = \"lambda_function_payload.zip\"  # Reference to the zip file","  source_code_hash = filebase64sha256(\"lambda_function_payload.zip\")","",""
+"2	LINE	0
+	# IAM Role for Lambda Execution
+	resource "aws_iam_role" "lambda_role" {
+	  name               = "lambda-execution-role"
+	  assume_role_policy = jsonencode({
+	    Version = "2012-10-17"
+	    Statement = [
+	      {
+	        Effect = "Allow",
+	        Principal = {
+	          Service = "lambda.amazonaws.com"
+	        }
+	      }
+	    ]
+	  })
+	}
+	
+	# IAM Policy Attachment
+	resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
+	  role       = aws_iam_role.lambda_role.name
+	  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+	}
+	
+	# Lambda Function 1 (First Lambda function)
+	resource "aws_lambda_function" "s3_event_logger_1" {
+	  function_name = "s3EventLogger"
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function.lambda_handler"
+	  runtime       = "python3.9"
+	  filename      = "lambda_function_payload.zip"  # Reference to the zip file
+	
+	  # Optional: you can add environment variables if needed
+	  environment {
+	    variables = {
+	      ENV_VAR = "value"  # Optional
+	    }
+	  }
+	}
+	
+	# Lambda Function 2 (Second Lambda function)
+	resource "aws_lambda_function" "s3_event_logger_2" {
+	  function_name = "s3_event_logger"
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function2.lambda_handler"  # Assuming lambda_function2.py has a 'lambda_handler' function
+	  runtime       = "python3.8"
+	  filename      = "lambda_function_payload.zip"  # Reference to the zip file
+	  source_code_hash = filebase64sha256("lambda_function_payload.zip")
+	
+	  # Optional: you can add environment variables if needed
+	  environment {
+	    variables = {
+|3,0,2,1,50,0,1745665958,"# IAM Role for Lambda Execution","resource \"aws_iam_role\" \"lambda_role\" {","  name               = \"lambda-execution-role\"","  assume_role_policy = jsonencode({","    Version = \"2012-10-17\"","    Statement = [","      {","        Effect = \"Allow\",","        Principal = {","          Service = \"lambda.amazonaws.com\"","        }","      }","    ]","  })","}","","# IAM Policy Attachment",>74
+|<"resource \"aws_iam_role_policy_attachment\" \"lambda_basic_execution\" {","  role       = aws_iam_role.lambda_role.name","  policy_arn = \"arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole\"","}","","# Lambda Function 1 (First Lambda function)","resource \"aws_lambda_function\" \"s3_event_logger_1\" {","  function_name = \"s3EventLogger\"","  role          = aws_iam_role.lambda_role.arn","  handler       = \"lambda_function.lambda_handler\"",>33
+|<"  runtime       = \"python3.9\"","  filename      = \"lambda_function_payload.zip\"  # Reference to the zip file","","  # Optional: you can add environment variables if needed","  environment {","    variables = {","      ENV_VAR = \"value\"  # Optional","    }","  }","}","","# Lambda Function 2 (Second Lambda function)","resource \"aws_lambda_function\" \"s3_event_logger_2\" {","  function_name = \"s3_event_logger\"","  role          = aws_iam_role.lambda_role.arn",>119
+|<"  handler       = \"lambda_function2.lambda_handler\"  # Assuming lambda_function2.py has a 'lambda_handler' function","  runtime       = \"python3.8\"","  filename      = \"lambda_function_payload.zip\"  # Reference to the zip file","  source_code_hash = filebase64sha256(\"lambda_function_payload.zip\")","","  # Optional: you can add environment variables if needed","  environment {","    variables = {"
+"3	LINE	0
+	# IAM Role and Policy for Lambda Execution
+	resource "aws_iam_role" "lambda_role" {
+	  name               = "lambda-execution-role"
+	  assume_role_policy = jsonencode({
+	    Version = "2012-10-17"
+	    Statement = [
+	      {
+	        Effect = "Allow",
+	        Principal = {
+	          Service = "lambda.amazonaws.com"
+	        }
+	      }
+	    ]
+	  })
+	}
+	
+	# IAM Policy Attachment
+	resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
+	  role       = aws_iam_role.lambda_role.name
+	  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+	}
+	
+	# Lambda Function 1 (First Lambda function)
+	resource "aws_lambda_function" "s3_event_logger_1" {
+	  function_name = "s3EventLogger"
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function.lambda_handler"
+	  runtime       = "python3.9"
+	  filename      = "lambda_function_payload.zip"  # Zip file for Lambda
+	}
+	
+	# Lambda Function 2 (Second Lambda function)
+	resource "aws_lambda_function" "s3_event_logger_2" {
+	  function_name = "s3_event_logger"
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function2.lambda_handler"  # Assuming lambda_function2.py has a 'lambda_handler' function
+	  runtime       = "python3.8"
+	  filename      = "lambda_function_payload.zip"  # Reference to the zip file
+	  source_code_hash = fil
+	
+|3,0,3,1,40,0,1745665749,"# IAM Role and Policy for Lambda Execution","resource \"aws_iam_role\" \"lambda_role\" {","  name               = \"lambda-execution-role\"","  assume_role_policy = jsonencode({","    Version = \"2012-10-17\"","    Statement = [","      {","        Effect = \"Allow\",","        Principal = {","          Service = \"lambda.amazonaws.com\"","        }","      }","    ]","  })","}","","# IAM Policy Attachment",>74
+|<"resource \"aws_iam_role_policy_attachment\" \"lambda_basic_execution\" {","  role       = aws_iam_role.lambda_role.name","  policy_arn = \"arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole\"","}","","# Lambda Function 1 (First Lambda function)","resource \"aws_lambda_function\" \"s3_event_logger_1\" {","  function_name = \"s3EventLogger\"","  role          = aws_iam_role.lambda_role.arn","  handler       = \"lambda_function.lambda_handler\"",>33
+|<"  runtime       = \"python3.9\"","  filename      = \"lambda_function_payload.zip\"  # Zip file for Lambda","}","","# Lambda Function 2 (Second Lambda function)","resource \"aws_lambda_function\" \"s3_event_logger_2\" {","  function_name = \"s3_event_logger\"","  role          = aws_iam_role.lambda_role.arn","  handler       = \"lambda_function2.lambda_handler\"  # Assuming lambda_function2.py has a 'lambda_handler' function","  runtime       = \"python3.8\"",>80
+|<"  filename      = \"lambda_function_payload.zip\"  # Reference to the zip file","  source_code_hash = fil",""
+"4	LINE	0
+	provider "aws" {
+	  region = "ap-south-1"  # Change if needed
+	}
+	
+	# EC2 Instance
+	resource "aws_instance" "web" {
+	  ami           = "ami-0f1dcc636b69a6438"  # Tera AMI id
+	  instance_type = "t2.micro"
+	
+	  tags = {
+	    Name = "WebServer"
+	  }
+	}
+	
+	# S3 Bucket
+	resource "aws_s3_bucket" "my_bucket" {
+	  bucket = "my-tf-bucket-amit-2025"  # Change it unique bucket naam
+	}
+	
+	# IAM Role for Lambda
+	resource "aws_iam_role" "lambda_role" {
+	  name = "lambda-execution-role"
+	
+	  assume_role_policy = jsonencode({
+	    Version = "2012-10-17",
+	    Statement = [
+	      {
+	        Action = "sts:AssumeRole",
+	        Effect = "Allow",
+	        Principal = {
+	          Service = "lambda.amazonaws.com"
+	        }
+	      }
+	    ]
+	  })
+	}
+	
+	# IAM Policy Attachment
+	resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
+	  role       = aws_iam_role.lambda_role.name
+	  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+	}
+	
+	# Lambda Function
+	resource "aws_lambda_function" "s3_event_logger" {
+	  function_name = "s3EventLogger"
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function.lambda_handler"
+	  runtime       = "python3.9"
+	
+|3,0,4,1,50,0,1745665663,"provider \"aws\" {","  region = \"ap-south-1\"  # Change if needed","}","","# EC2 Instance","resource \"aws_instance\" \"web\" {","  ami           = \"ami-0f1dcc636b69a6438\"  # Tera AMI id","  instance_type = \"t2.micro\"","","  tags = {","    Name = \"WebServer\"","  }","}","","# S3 Bucket","resource \"aws_s3_bucket\" \"my_bucket\" {","  bucket = \"my-tf-bucket-amit-2025\"  # Change it unique bucket naam","}","",>23
+|<"# IAM Role for Lambda","resource \"aws_iam_role\" \"lambda_role\" {","  name = \"lambda-execution-role\"","","  assume_role_policy = jsonencode({","    Version = \"2012-10-17\",","    Statement = [","      {","        Action = \"sts:AssumeRole\",","        Effect = \"Allow\",","        Principal = {","          Service = \"lambda.amazonaws.com\"","        }","      }","    ]","  })","}","","# IAM Policy Attachment",>74
+|<"resource \"aws_iam_role_policy_attachment\" \"lambda_basic_execution\" {","  role       = aws_iam_role.lambda_role.name","  policy_arn = \"arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole\"","}","","# Lambda Function","resource \"aws_lambda_function\" \"s3_event_logger\" {","  function_name = \"s3EventLogger\"","  role          = aws_iam_role.lambda_role.arn","  handler       = \"lambda_function.lambda_handler\"","  runtime       = \"python3.9\"",""
+"5	LINE	0
+	provider "aws" {
+	  region = "us-east-1"  # Choose your preferred AWS region
+	}
+	
+	# Create an S3 Bucket
+	resource "aws_s3_bucket" "my_bucket" {
+	  bucket = "my-unique-bucket-name-123456"  # Ensure the name is globally unique
+	  acl    = "public-read"  # Make it publicly accessible for static content
+	
+	  website {
+	    index_document = "index.html"
+	  }
+	}
+	
+	# Create an IAM Role for Lambda Execution
+	resource "aws_iam_role" "lambda_role" {
+	  name               = "lambda_execution_role"
+	  assume_role_policy = jsonencode({
+	    Version = "2012-10-17"
+	    Statement = [
+	      {
+	        Action    = "sts:AssumeRole"
+	        Principal = {
+	          Service = "lambda.amazonaws.com"
+	        }
+	        Effect    = "Allow"
+	        Sid       = ""
+	      },
+	    ]
+	  })
+	}
+	
+	# Create Lambda Function
+	resource "aws_lambda_function" "s3_event_logger" {
+	  function_name = "S3EventLogger"
+	
+	  role          = aws_iam_role.lambda_role.arn
+	  handler       = "lambda_function.lambda_handler"
+	  runtime       = "python3.8"
+	  filename      = "lambda_function.zip"  # Upload your Lambda function ZIP file here
+	  source_code_hash = filebase64sha256("lambda_function.zip")
+	
+	  environment {
+	    variables = {
+	      BUCKET_NAME = aws_s3_bucket.my_bucket.bucket
+	    }
+	  }
+	}
+	
+	# Create S3 Bucket Object (for index.html file)
+|3,0,5,1,50,0,1745662529,"provider \"aws\" {","  region = \"us-east-1\"  # Choose your preferred AWS region","}","","# Create an S3 Bucket","resource \"aws_s3_bucket\" \"my_bucket\" {","  bucket = \"my-unique-bucket-name-123456\"  # Ensure the name is globally unique","  acl    = \"public-read\"  # Make it publicly accessible for static content","","  website {","    index_document = \"index.html\"","  }","}","","# Create an IAM Role for Lambda Execution",>45
+|<"resource \"aws_iam_role\" \"lambda_role\" {","  name               = \"lambda_execution_role\"","  assume_role_policy = jsonencode({","    Version = \"2012-10-17\"","    Statement = [","      {","        Action    = \"sts:AssumeRole\"","        Principal = {","          Service = \"lambda.amazonaws.com\"","        }","        Effect    = \"Allow\"","        Sid       = \"\"","      },","    ]","  })","}","","# Create Lambda Function",>56
+|<"resource \"aws_lambda_function\" \"s3_event_logger\" {","  function_name = \"S3EventLogger\"","","  role          = aws_iam_role.lambda_role.arn","  handler       = \"lambda_function.lambda_handler\"","  runtime       = \"python3.8\"","  filename      = \"lambda_function.zip\"  # Upload your Lambda function ZIP file here","  source_code_hash = filebase64sha256(\"lambda_function.zip\")","","  environment {","    variables = {","      BUCKET_NAME = aws_s3_bucket.my_bucket.bucket",>7
+|<"    }","  }","}","","# Create S3 Bucket Object (for index.html file)"
+"6	LINE	0
+	provider "aws" {
+	  region = "ap-south-1"  # Mumbai region (change as per your region)
+	}
+	
+	# EC2 Instance definition
+	resource "aws_instance" "example" {
+	  ami           = "ami-0c02fb55956c7d316"   # Amazon Linux 2 AMI (latest as of writing)
+	  instance_type = var.instance_type
+	  key_name      = var.key_name
+	
+	  tags = {
+	    Name = "MyTerraformEC2"
+	  }
+	
+	  # Create security group to allow HTTP traffic
+	  security_groups = [aws_security_group.sg.name]
+	}
+	
+	# Security Group definition
+	resource "aws_security_group" "sg" {
+	  name_prefix = "web-sg-"
+	
+	  ingress {
+	    from_port   = 80
+	    to_port     = 80
+	    protocol    = "tcp"
+	    cidr_blocks = ["0.0.0.0/0"]  # Allow HTTP access
+	  }
+	
+	  egress {
+	    from_port   = 0
+	    to_port     = 0
+	    protocol    = "-1"
+	    cidr_blocks = ["0.0.0.0/0"]  # Allow all outbound traffic
+	  }
+	}
+	
+	# S3 Bucket creation for static website hosting
+	resource "aws_s3_bucket" "my_bucket" {
+	  bucket = var.bucket_name
+	  acl    = "public-read"  # Make it publicly accessible for static content
+	}
+	
+	# S3 Bucket object (e.g. index.html for static website)
+	resource "aws_s3_bucket_object" "index_html" {
+	  bucket = aws_s3_bucket.my_bucket.bucket
+	  key    = "index.html"
+	  source = "index.html"  # Path to your local index.html file
+	  acl    = "public-read"
+	}
+|3,0,6,1,50,0,1745662362,"provider \"aws\" {","  region = \"ap-south-1\"  # Mumbai region (change as per your region)","}","","# EC2 Instance definition","resource \"aws_instance\" \"example\" {","  ami           = \"ami-0c02fb55956c7d316\"   # Amazon Linux 2 AMI (latest as of writing)","  instance_type = var.instance_type","  key_name      = var.key_name","","  tags = {","    Name = \"MyTerraformEC2\"","  }","",>49
+|<"  # Create security group to allow HTTP traffic","  security_groups = [aws_security_group.sg.name]","}","","# Security Group definition","resource \"aws_security_group\" \"sg\" {","  name_prefix = \"web-sg-\"","","  ingress {","    from_port   = 80","    to_port     = 80","    protocol    = \"tcp\"","    cidr_blocks = [\"0.0.0.0/0\"]  # Allow HTTP access","  }","","  egress {","    from_port   = 0","    to_port     = 0","    protocol    = \"-1\"",>65
+|<"    cidr_blocks = [\"0.0.0.0/0\"]  # Allow all outbound traffic","  }","}","","# S3 Bucket creation for static website hosting","resource \"aws_s3_bucket\" \"my_bucket\" {","  bucket = var.bucket_name","  acl    = \"public-read\"  # Make it publicly accessible for static content","}","","# S3 Bucket object (e.g. index.html for static website)","resource \"aws_s3_bucket_object\" \"index_html\" {","  bucket = aws_s3_bucket.my_bucket.bucket","  key    = \"index.html\"",>65
+|<"  source = \"index.html\"  # Path to your local index.html file","  acl    = \"public-read\"","}"
 
 # File marks:
-'0  19  45  ~/.github/workflows/ci-cd.yml
-|4,48,19,45,1745655956,"~/.github/workflows/ci-cd.yml"
-'1  20  57  ~/ci-cd.yml
-|4,49,20,57,1745655806,"~/ci-cd.yml"
-'2  1  277  ~/ci-cd.yml
-|4,50,1,277,1745655617,"~/ci-cd.yml"
-'3  20  0  ~/ci-cd.yml
-|4,51,20,0,1745655617,"~/ci-cd.yml"
-'4  20  0  ~/.github/workflows/ci-cd.yml
-|4,52,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
-'5  37  0  ~/workflows/ci-cd.yml
-|4,53,37,0,1745654966,"~/workflows/ci-cd.yml"
-'6  28  0  ~/recover_deleted_file.sh
-|4,54,28,0,1745654488,"~/recover_deleted_file.sh"
-'7  2  0  ~/push_with_lfs.sh
-|4,55,2,0,1745648954,"~/push_with_lfs.sh"
-'8  3  0  ~/.gitignore
-|4,56,3,0,1745648789,"~/.gitignore"
-'9  1  2  ~/.gitignore
-|4,57,1,2,1745648763,"~/.gitignore"
+'0  55  0  ~/terraform_project/main.tf
+|4,48,55,0,1745666000,"~/terraform_project/main.tf"
+'1  1  0  ~/terraform_project/main.tf
+|4,49,1,0,1745665758,"~/terraform_project/main.tf"
+'2  60  0  ~/terraform_project/main.tf
+|4,50,60,0,1745665758,"~/terraform_project/main.tf"
+'3  1  0  ~/terraform_project/main.tf
+|4,51,1,0,1745665687,"~/terraform_project/main.tf"
+'4  1  0  ~/terraform_project/main.tf
+|4,52,1,0,1745665687,"~/terraform_project/main.tf"
+'5  1  0  ~/terraform_project/main.tf
+|4,53,1,0,1745665687,"~/terraform_project/main.tf"
+'6  40  0  ~/terraform_project/main.tf
+|4,54,40,0,1745665687,"~/terraform_project/main.tf"
+'7  1  1  ~/terraform_project/main.tf
+|4,55,1,1,1745665542,"~/terraform_project/main.tf"
+'8  85  0  ~/terraform_project/main.tf
+|4,56,85,0,1745665542,"~/terraform_project/main.tf"
+'9  1  1  ~/terraform_project/main.tf
+|4,57,1,1,1745665542,"~/terraform_project/main.tf"
 
 # Jumplist (newest first):
--'  19  45  ~/.github/workflows/ci-cd.yml
-|4,39,19,45,1745655956,"~/.github/workflows/ci-cd.yml"
--'  20  57  ~/ci-cd.yml
-|4,39,20,57,1745655806,"~/ci-cd.yml"
--'  20  57  ~/ci-cd.yml
-|4,39,20,57,1745655806,"~/ci-cd.yml"
--'  1  277  ~/ci-cd.yml
-|4,39,1,277,1745655777,"~/ci-cd.yml"
--'  1  277  ~/ci-cd.yml
-|4,39,1,277,1745655777,"~/ci-cd.yml"
--'  20  0  ~/ci-cd.yml
-|4,39,20,0,1745655617,"~/ci-cd.yml"
--'  20  0  ~/ci-cd.yml
-|4,39,20,0,1745655617,"~/ci-cd.yml"
--'  1  0  ~/ci-cd.yml
-|4,39,1,0,1745655585,"~/ci-cd.yml"
--'  1  0  ~/ci-cd.yml
-|4,39,1,0,1745655585,"~/ci-cd.yml"
--'  20  0  ~/.github/workflows/ci-cd.yml
-|4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
--'  20  0  ~/.github/workflows/ci-cd.yml
-|4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
--'  20  0  ~/.github/workflows/ci-cd.yml
-|4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
--'  20  0  ~/.github/workflows/ci-cd.yml
-|4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
--'  1  0  ~/.github/workflows/ci-cd.yml
-|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
--'  1  0  ~/.github/workflows/ci-cd.yml
-|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
--'  1  0  ~/.github/workflows/ci-cd.yml
-|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
--'  1  0  ~/.github/workflows/ci-cd.yml
-|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
--'  1  0  ~/.github/workflows/ci-cd.yml
-|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  37  0  ~/workflows/ci-cd.yml
-|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  1  0  ~/workflows/ci-cd.yml
-|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  28  0  ~/recover_deleted_file.sh
-|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
--'  1  0  ~/recover_deleted_file.sh
-|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  55  0  ~/terraform_project/main.tf
+|4,39,55,0,1745666000,"~/terraform_project/main.tf"
+-'  1  0  ~/terraform_project/main.tf
+|4,39,1,0,1745665982,"~/terraform_project/main.tf"
+-'  60  0  ~/terraform_project/main.tf
+|4,39,60,0,1745665758,"~/terraform_project/main.tf"
+-'  1  0  ~/terraform_project/main.tf
+|4,39,1,0,1745665749,"~/terraform_project/main.tf"
+-'  40  0  ~/terraform_project/main.tf
+|4,39,40,0,1745665687,"~/terraform_project/main.tf"
+-'  1  2  ~/terraform_project/main.tf
+|4,39,1,2,1745665663,"~/terraform_project/main.tf"
+-'  85  0  ~/terraform_project/main.tf
+|4,39,85,0,1745665542,"~/terraform_project/main.tf"
+-'  66  0  ~/terraform_project/main.tf
+|4,39,66,0,1745665542,"~/terraform_project/main.tf"
+-'  92  0  ~/terraform_project/main.tf
+|4,39,92,0,1745665542,"~/terraform_project/main.tf"
+-'  73  0  ~/terraform_project/main.tf
+|4,39,73,0,1745665542,"~/terraform_project/main.tf"
+-'  7  39  ~/terraform_project/main.tf
+|4,39,7,39,1745665488,"~/terraform_project/main.tf"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  12  0  ~/terraform_project/lambda_function2.py
+|4,39,12,0,1745665335,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  1  0  ~/terraform_project/lambda_function2.py
+|4,39,1,0,1745665300,"~/terraform_project/lambda_function2.py"
+-'  7  39  ~/terraform_project/main.tf
+|4,39,7,39,1745663721,"~/terraform_project/main.tf"
+-'  7  39  ~/terraform_project/main.tf
+|4,39,7,39,1745663721,"~/terraform_project/main.tf"
+-'  17  33  ~/terraform_project/main.tf
+|4,39,17,33,1745663687,"~/terraform_project/main.tf"
+-'  17  33  ~/terraform_project/main.tf
+|4,39,17,33,1745663687,"~/terraform_project/main.tf"
+-'  17  33  ~/terraform_project/main.tf
+|4,39,17,33,1745663687,"~/terraform_project/main.tf"
+-'  17  33  ~/terraform_project/main.tf
+|4,39,17,33,1745663208,"~/terraform_project/main.tf"
+-'  17  33  ~/terraform_project/main.tf
+|4,39,17,33,1745663208,"~/terraform_project/main.tf"
+-'  58  18  ~/terraform_project/main.tf
+|4,39,58,18,1745663179,"~/terraform_project/main.tf"
+-'  65  18  ~/terraform_project/main.tf
+|4,39,65,18,1745663179,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663179,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663179,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663179,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663179,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663179,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663146,"~/terraform_project/main.tf"
+-'  46  18  ~/terraform_project/main.tf
+|4,39,46,18,1745663146,"~/terraform_project/main.tf"
+-'  70  0  ~/terraform_project/main.tf
+|4,39,70,0,1745663100,"~/terraform_project/main.tf"
+-'  77  0  ~/terraform_project/main.tf
+|4,39,77,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  58  0  ~/terraform_project/main.tf
+|4,39,58,0,1745663100,"~/terraform_project/main.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
+-'  8  0  ~/terraform_project/outputs.tf
+|4,39,8,0,1745662800,"~/terraform_project/outputs.tf"
 
 # History of marks within files (newest to oldest):
 
+> ~/terraform_project/main.tf
+	*	1745665998	0
+	"	55	0
+	^	55	0
+	.	54	1
+	+	238	1
+	+	197	19
+	+	192	72
+	+	1	1
+	+	1	166
+	+	1	16
+	+	1	1
+	+	1	0
+	+	1	19
+	+	1	33
+	+	1	39
+	+	1	1
+	+	1	42
+	+	1	24
+	+	1	31
+	+	1	74
+	+	1	0
+	+	1	21
+	+	54	1
+
+> ~/terraform_project/lambda_function2.py
+	*	1745665332	0
+	"	12	0
+	^	12	0
+	.	11	1
+	+	11	1
+
+> ~/terraform_project/outputs.tf
+	*	1745662795	0
+	"	8	0
+	^	7	0
+	.	6	1
+	+	1	70
+	+	1	0
+	+	1	29
+	+	3	1
+	+	6	1
+
+> ~/lambda_function/lambda_function.py
+	*	1745661836	0
+	"	9	0
+	^	9	0
+	.	8	5
+	+	8	5
+
+> ~/terraform_project/variables.tf
+	*	1745660840	0
+	"	13	0
+	^	13	0
+	.	12	1
+	+	12	1
+
+> ~/.github/workflows/deploy.yml
+	*	1745658275	0
+	"	17	0
+	^	17	0
+	.	16	44
+	+	16	44
+
 > ~/.github/workflows/ci-cd.yml
-	*	1745655952	0
-	"	19	45
-	^	19	46
+	*	1745658244	0
+	"	20	0
+	^	20	0
+	.	19	34
+	+	38	46
+	+	39	0
+	+	38	46
+	+	19	34
+
+> ~/.github/workflows/ci-cd-pipeline.yml
+	*	1745658126	0
+	"	20	0
+	^	20	0
 	.	19	46
-	+	19	46
-	+	20	0
 	+	19	46
 
 > ~/ci-cd.yml
@@ -288,6 +648,10 @@
 	^	28	0
 	.	27	2
 	+	27	2
+
+> ~/.git/COMMIT_EDITMSG
+	*	1745654340	0
+	"	6	0
 
 > ~/push_with_lfs.sh
 	*	1745648951	0
@@ -316,10 +680,6 @@
 	*	1745637029	0
 	"	31	6
 	^	10	0
-
-> ~/.git/COMMIT_EDITMSG
-	*	1745636490	0
-	"	6	22
 
 > ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
 	*	1745635388	0
@@ -350,48 +710,3 @@
 	+	34	40
 	+	14	47
 	+	15	71
-
-> ~/ci-cd-pipeline.yml
-	*	1745633264	0
-	"	27	0
-	^	27	0
-	.	26	39
-	+	26	39
-
-> ~/git_push_script.sh.
-	*	1745627673	0
-	"	21	0
-	^	21	0
-	.	20	25
-	+	20	25
-
-> ~/main.tf
-	*	1745625728	0
-	"	37	0
-	^	37	0
-	.	36	27
-	+	1	806
-	+	1	883
-	+	1	957
-	+	36	27
-
-> ~/csv_analyzer.py
-	*	1745605729	0
-	"	17	0
-	^	17	0
-	.	16	33
-	+	16	33
-
-> ~/students.csv
-	*	1745605671	0
-	"	5	0
-	^	5	0
-	.	4	16
-	+	4	16
-
-> ~/s3_script.py
-	*	1745605335	0
-	"	21	44
-	^	21	45
-	.	21	44
-	+	21	44
