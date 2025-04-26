@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1745655617,,"wq"
+|2,0,1745655806,,"wq"
 :.q!
 |2,0,1745648763,,".q!"
 :!q
@@ -33,28 +33,32 @@
 # Registers:
 
 # File marks:
-'0  20  0  ~/ci-cd.yml
-|4,48,20,0,1745655617,"~/ci-cd.yml"
-'1  20  0  ~/.github/workflows/ci-cd.yml
-|4,49,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
-'2  37  0  ~/workflows/ci-cd.yml
-|4,50,37,0,1745654966,"~/workflows/ci-cd.yml"
-'3  28  0  ~/recover_deleted_file.sh
-|4,51,28,0,1745654488,"~/recover_deleted_file.sh"
-'4  2  0  ~/push_with_lfs.sh
-|4,52,2,0,1745648954,"~/push_with_lfs.sh"
-'5  3  0  ~/.gitignore
-|4,53,3,0,1745648789,"~/.gitignore"
-'6  1  2  ~/.gitignore
-|4,54,1,2,1745648763,"~/.gitignore"
-'7  1  2  ~/.gitignore
-|4,55,1,2,1745648763,"~/.gitignore"
-'8  39  0  ~/workflows/deploy.yml
-|4,56,39,0,1745637083,"~/workflows/deploy.yml"
-'9  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
-|4,57,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+'0  20  57  ~/ci-cd.yml
+|4,48,20,57,1745655806,"~/ci-cd.yml"
+'1  1  277  ~/ci-cd.yml
+|4,49,1,277,1745655617,"~/ci-cd.yml"
+'2  20  0  ~/ci-cd.yml
+|4,50,20,0,1745655617,"~/ci-cd.yml"
+'3  20  0  ~/.github/workflows/ci-cd.yml
+|4,51,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
+'4  37  0  ~/workflows/ci-cd.yml
+|4,52,37,0,1745654966,"~/workflows/ci-cd.yml"
+'5  28  0  ~/recover_deleted_file.sh
+|4,53,28,0,1745654488,"~/recover_deleted_file.sh"
+'6  2  0  ~/push_with_lfs.sh
+|4,54,2,0,1745648954,"~/push_with_lfs.sh"
+'7  3  0  ~/.gitignore
+|4,55,3,0,1745648789,"~/.gitignore"
+'8  1  2  ~/.gitignore
+|4,56,1,2,1745648763,"~/.gitignore"
+'9  1  2  ~/.gitignore
+|4,57,1,2,1745648763,"~/.gitignore"
 
 # Jumplist (newest first):
+-'  20  57  ~/ci-cd.yml
+|4,39,20,57,1745655806,"~/ci-cd.yml"
+-'  1  277  ~/ci-cd.yml
+|4,39,1,277,1745655777,"~/ci-cd.yml"
 -'  20  0  ~/ci-cd.yml
 |4,39,20,0,1745655617,"~/ci-cd.yml"
 -'  1  0  ~/ci-cd.yml
@@ -63,6 +67,14 @@
 |4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
 -'  20  0  ~/.github/workflows/ci-cd.yml
 |4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
+-'  20  0  ~/.github/workflows/ci-cd.yml
+|4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
+-'  20  0  ~/.github/workflows/ci-cd.yml
+|4,39,20,0,1745655448,"~/.github/workflows/ci-cd.yml"
+-'  1  0  ~/.github/workflows/ci-cd.yml
+|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
+-'  1  0  ~/.github/workflows/ci-cd.yml
+|4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
 -'  1  0  ~/.github/workflows/ci-cd.yml
 |4,39,1,0,1745655432,"~/.github/workflows/ci-cd.yml"
 -'  1  0  ~/.github/workflows/ci-cd.yml
@@ -75,6 +87,22 @@
 |4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
 -'  37  0  ~/workflows/ci-cd.yml
 |4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
+-'  37  0  ~/workflows/ci-cd.yml
+|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
+-'  37  0  ~/workflows/ci-cd.yml
+|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
+-'  37  0  ~/workflows/ci-cd.yml
+|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
+-'  37  0  ~/workflows/ci-cd.yml
+|4,39,37,0,1745654966,"~/workflows/ci-cd.yml"
+-'  1  0  ~/workflows/ci-cd.yml
+|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
+-'  1  0  ~/workflows/ci-cd.yml
+|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
+-'  1  0  ~/workflows/ci-cd.yml
+|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
+-'  1  0  ~/workflows/ci-cd.yml
+|4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
 -'  1  0  ~/workflows/ci-cd.yml
 |4,39,1,0,1745654946,"~/workflows/ci-cd.yml"
 -'  1  0  ~/workflows/ci-cd.yml
@@ -99,6 +127,38 @@
 |4,39,28,0,1745654488,"~/recover_deleted_file.sh"
 -'  28  0  ~/recover_deleted_file.sh
 |4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
 -'  1  0  ~/recover_deleted_file.sh
 |4,39,1,0,1745654464,"~/recover_deleted_file.sh"
 -'  1  0  ~/recover_deleted_file.sh
@@ -147,6 +207,38 @@
 |4,39,2,0,1745648954,"~/push_with_lfs.sh"
 -'  2  0  ~/push_with_lfs.sh
 |4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  2  0  ~/push_with_lfs.sh
+|4,39,2,0,1745648954,"~/push_with_lfs.sh"
 -'  1  0  ~/push_with_lfs.sh
 |4,39,1,0,1745648933,"~/push_with_lfs.sh"
 -'  1  0  ~/push_with_lfs.sh
@@ -163,107 +255,16 @@
 |4,39,1,0,1745648933,"~/push_with_lfs.sh"
 -'  1  0  ~/push_with_lfs.sh
 |4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
 
 > ~/ci-cd.yml
-	*	1745655613	0
-	"	20	0
-	^	20	0
-	.	19	46
-	+	19	46
+	*	1745655802	0
+	"	20	57
+	^	21	0
+	.	20	58
+	+	1	277
+	+	20	58
 
 > ~/.github/workflows/ci-cd.yml
 	*	1745655446	0
