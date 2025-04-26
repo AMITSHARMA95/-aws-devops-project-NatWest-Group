@@ -12,7 +12,9 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1745627676,,"wq"
+|2,0,1745637083,,"wq"
+:q
+|2,0,1745637032,,"q"
 :.!Q
 |2,0,1745625726,,".!Q"
 
@@ -27,230 +29,283 @@
 # Registers:
 
 # File marks:
-'0  21  0  ~/git_push_script.sh.
-|4,48,21,0,1745627676,"~/git_push_script.sh."
-'1  21  0  ~/git_push_script.sh.
-|4,49,21,0,1745627638,"~/git_push_script.sh."
-'2  37  0  ~/main.tf
-|4,50,37,0,1745625732,"~/main.tf"
-'3  1  957  ~/main.tf
-|4,51,1,957,1745625398,"~/main.tf"
-'4  32  0  ~/main.tf
-|4,52,32,0,1745625398,"~/main.tf"
-'5  1  806  ~/main.tf
-|4,53,1,806,1745625238,"~/main.tf"
-'6  1  859  ~/main.tf
-|4,54,1,859,1745625238,"~/main.tf"
-'7  1  806  ~/main.tf
-|4,55,1,806,1745625238,"~/main.tf"
-'8  30  0  ~/main.tf
-|4,56,30,0,1745625238,"~/main.tf"
-'9  17  0  ~/csv_analyzer.py
-|4,57,17,0,1745605732,"~/csv_analyzer.py"
+'0  39  0  ~/workflows/deploy.yml
+|4,48,39,0,1745637083,"~/workflows/deploy.yml"
+'1  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,49,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+'2  6  22  ~/.git/COMMIT_EDITMSG
+|4,50,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+'3  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,51,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+'4  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,52,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+'5  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,53,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+'6  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,54,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+'7  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,55,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+'8  15  31  ~/ci-cd-pipeline.yml/terraform.yml
+|4,56,15,31,1745634431,"~/ci-cd-pipeline.yml/terraform.yml"
+'9  15  31  ~/ci-cd-pipeline.yml/terraform.yml
+|4,57,15,31,1745634431,"~/ci-cd-pipeline.yml/terraform.yml"
 
 # Jumplist (newest first):
--'  21  0  ~/git_push_script.sh.
-|4,39,21,0,1745627676,"~/git_push_script.sh."
--'  21  0  ~/git_push_script.sh.
-|4,39,21,0,1745627638,"~/git_push_script.sh."
--'  1  0  ~/git_push_script.sh.
-|4,39,1,0,1745627605,"~/git_push_script.sh."
--'  1  0  ~/git_push_script.sh.
-|4,39,1,0,1745627605,"~/git_push_script.sh."
--'  37  0  ~/main.tf
-|4,39,37,0,1745625732,"~/main.tf"
--'  37  0  ~/main.tf
-|4,39,37,0,1745625732,"~/main.tf"
--'  37  0  ~/main.tf
-|4,39,37,0,1745625732,"~/main.tf"
--'  37  0  ~/main.tf
-|4,39,37,0,1745625732,"~/main.tf"
--'  1  957  ~/main.tf
-|4,39,1,957,1745625589,"~/main.tf"
--'  1  957  ~/main.tf
-|4,39,1,957,1745625589,"~/main.tf"
--'  1  957  ~/main.tf
-|4,39,1,957,1745625589,"~/main.tf"
--'  1  957  ~/main.tf
-|4,39,1,957,1745625589,"~/main.tf"
--'  32  0  ~/main.tf
-|4,39,32,0,1745625398,"~/main.tf"
--'  32  0  ~/main.tf
-|4,39,32,0,1745625398,"~/main.tf"
--'  32  0  ~/main.tf
-|4,39,32,0,1745625398,"~/main.tf"
--'  32  0  ~/main.tf
-|4,39,32,0,1745625398,"~/main.tf"
--'  1  806  ~/main.tf
-|4,39,1,806,1745625357,"~/main.tf"
--'  1  806  ~/main.tf
-|4,39,1,806,1745625357,"~/main.tf"
--'  1  806  ~/main.tf
-|4,39,1,806,1745625357,"~/main.tf"
--'  1  806  ~/main.tf
-|4,39,1,806,1745625357,"~/main.tf"
--'  30  0  ~/main.tf
-|4,39,30,0,1745625238,"~/main.tf"
--'  30  0  ~/main.tf
-|4,39,30,0,1745625238,"~/main.tf"
--'  30  0  ~/main.tf
-|4,39,30,0,1745625238,"~/main.tf"
--'  30  0  ~/main.tf
-|4,39,30,0,1745625238,"~/main.tf"
--'  1  0  ~/main.tf
-|4,39,1,0,1745625139,"~/main.tf"
--'  1  0  ~/main.tf
-|4,39,1,0,1745625139,"~/main.tf"
--'  1  0  ~/main.tf
-|4,39,1,0,1745625139,"~/main.tf"
--'  1  0  ~/main.tf
-|4,39,1,0,1745625139,"~/main.tf"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  17  0  ~/csv_analyzer.py
-|4,39,17,0,1745605732,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  1  0  ~/csv_analyzer.py
-|4,39,1,0,1745605715,"~/csv_analyzer.py"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
--'  5  0  ~/students.csv
-|4,39,5,0,1745605673,"~/students.csv"
+-'  39  0  ~/workflows/deploy.yml
+|4,39,39,0,1745637083,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  6  22  ~/.git/COMMIT_EDITMSG
+|4,39,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+-'  6  22  ~/.git/COMMIT_EDITMSG
+|4,39,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+-'  6  22  ~/.git/COMMIT_EDITMSG
+|4,39,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+-'  6  22  ~/.git/COMMIT_EDITMSG
+|4,39,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1745636478,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1745636478,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1745636478,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1745636478,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  36  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,36,0,1745635390,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  1  0  ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+|4,39,1,0,1745635379,"~/ci-cd-pipeline.yml/ci-cd-pipeline.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634814,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
+-'  25  33  ~/ci-cd-pipeline.yml/terraform.yml
+|4,39,25,33,1745634565,"~/ci-cd-pipeline.yml/terraform.yml"
 
 # History of marks within files (newest to oldest):
+
+> ~/workflows/deploy.yml
+	*	1745637081	0
+	"	39	0
+	^	39	0
+	.	38	1
+	+	38	1
+
+> ~/workflows/ci-cd-pipeline.yml/deploy.yml
+	*	1745637029	0
+	"	31	6
+	^	10	0
+
+> ~/.git/COMMIT_EDITMSG
+	*	1745636490	0
+	"	6	22
+
+> ~/ci-cd-pipeline.yml/ci-cd-pipeline.yml
+	*	1745635388	0
+	"	36	0
+	^	36	0
+	.	35	42
+	+	35	42
+
+> ~/ci-cd-pipeline.yml/terraform.yml
+	*	1745634811	0
+	"	25	33
+	^	25	34
+	.	25	33
+	+	34	40
+	+	14	53
+	+	15	31
+	+	25	33
+
+> ~/ci-cd-pipline.yml
+	*	1745634027	0
+	"	1	0
+
+> ~/amit/.github/workflows/deploy.yml
+	*	1745633635	0
+	"	15	71
+	^	15	72
+	.	15	71
+	+	34	40
+	+	14	47
+	+	15	71
+
+> ~/ci-cd-pipeline.yml
+	*	1745633264	0
+	"	27	0
+	^	27	0
+	.	26	39
+	+	26	39
 
 > ~/git_push_script.sh.
 	*	1745627673	0
