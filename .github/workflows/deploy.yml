@@ -1,4 +1,4 @@
-name: Terraform CI/CD Pipeline
+name: Deploy to Production
 
 on:
   push:
@@ -6,34 +6,12 @@ on:
       - master
 
 jobs:
-  terraform:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Terraform
-      uses: hashicorp/setup-terraform@v1
-
-    - name: Terraform Format
-      run: terraform fmt -check
-
-    - name: Terraform Init
-      run: terraform init
-
-    - name: Terraform Plan
-      run: terraform plan
-
-    - name: Terraform Apply
-      run: terraform apply -auto-approve
-
-    - name: Terraform Validate
-      run: terraform validate
-
-    - name: Clean up
-      run: terraform destroy -auto-approve
-
-~
-~
+      - name: Deploy to Production Server
+        run: echo "Deploying to production!"
 
