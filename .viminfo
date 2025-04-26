@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1745653991,,"wq"
+|2,0,1745654488,,"wq"
 :.q!
 |2,0,1745648763,,".q!"
 :!q
@@ -33,56 +33,32 @@
 # Registers:
 
 # File marks:
-'0  32  0  ~/workflows/ci-cd-pipelines.yml
-|4,48,32,0,1745653991,"~/workflows/ci-cd-pipelines.yml"
-'1  1  0  ~/.gitattributes
-|4,49,1,0,1745653748,"~/.gitattributes"
-'2  2  0  ~/.gitattributes
-|4,50,2,0,1745653106,"~/.gitattributes"
-'3  2  0  ~/push_with_lfs.sh
-|4,51,2,0,1745648954,"~/push_with_lfs.sh"
-'4  3  0  ~/.gitignore
-|4,52,3,0,1745648789,"~/.gitignore"
-'5  1  2  ~/.gitignore
-|4,53,1,2,1745648763,"~/.gitignore"
-'6  1  2  ~/.gitignore
-|4,54,1,2,1745648763,"~/.gitignore"
-'7  39  0  ~/workflows/deploy.yml
-|4,55,39,0,1745637083,"~/workflows/deploy.yml"
-'8  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
-|4,56,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
-'9  6  22  ~/.git/COMMIT_EDITMSG
-|4,57,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+'0  28  0  ~/recover_deleted_file.sh
+|4,48,28,0,1745654488,"~/recover_deleted_file.sh"
+'1  2  0  ~/push_with_lfs.sh
+|4,49,2,0,1745648954,"~/push_with_lfs.sh"
+'2  3  0  ~/.gitignore
+|4,50,3,0,1745648789,"~/.gitignore"
+'3  1  2  ~/.gitignore
+|4,51,1,2,1745648763,"~/.gitignore"
+'4  1  2  ~/.gitignore
+|4,52,1,2,1745648763,"~/.gitignore"
+'5  39  0  ~/workflows/deploy.yml
+|4,53,39,0,1745637083,"~/workflows/deploy.yml"
+'6  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,54,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+'7  6  22  ~/.git/COMMIT_EDITMSG
+|4,55,6,22,1745636493,"~/.git/COMMIT_EDITMSG"
+'8  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,56,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+'9  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,57,1,0,1745636377,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
 
 # Jumplist (newest first):
--'  32  0  ~/workflows/ci-cd-pipelines.yml
-|4,39,32,0,1745653991,"~/workflows/ci-cd-pipelines.yml"
--'  1  0  ~/workflows/ci-cd-pipelines.yml
-|4,39,1,0,1745653960,"~/workflows/ci-cd-pipelines.yml"
--'  1  0  ~/.gitattributes
-|4,39,1,0,1745653748,"~/.gitattributes"
--'  1  0  ~/.gitattributes
-|4,39,1,0,1745653748,"~/.gitattributes"
--'  2  0  ~/.gitattributes
-|4,39,2,0,1745653106,"~/.gitattributes"
--'  2  0  ~/.gitattributes
-|4,39,2,0,1745653106,"~/.gitattributes"
--'  1  0  ~/.gitattributes
-|4,39,1,0,1745653056,"~/.gitattributes"
--'  1  0  ~/.gitattributes
-|4,39,1,0,1745653056,"~/.gitattributes"
--'  2  0  ~/push_with_lfs.sh
-|4,39,2,0,1745648954,"~/push_with_lfs.sh"
--'  2  0  ~/push_with_lfs.sh
-|4,39,2,0,1745648954,"~/push_with_lfs.sh"
--'  2  0  ~/push_with_lfs.sh
-|4,39,2,0,1745648954,"~/push_with_lfs.sh"
--'  2  0  ~/push_with_lfs.sh
-|4,39,2,0,1745648954,"~/push_with_lfs.sh"
--'  2  0  ~/push_with_lfs.sh
-|4,39,2,0,1745648954,"~/push_with_lfs.sh"
--'  2  0  ~/push_with_lfs.sh
-|4,39,2,0,1745648954,"~/push_with_lfs.sh"
+-'  28  0  ~/recover_deleted_file.sh
+|4,39,28,0,1745654488,"~/recover_deleted_file.sh"
+-'  1  0  ~/recover_deleted_file.sh
+|4,39,1,0,1745654464,"~/recover_deleted_file.sh"
 -'  2  0  ~/push_with_lfs.sh
 |4,39,2,0,1745648954,"~/push_with_lfs.sh"
 -'  2  0  ~/push_with_lfs.sh
@@ -91,42 +67,6 @@
 |4,39,1,0,1745648933,"~/push_with_lfs.sh"
 -'  1  0  ~/push_with_lfs.sh
 |4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  1  0  ~/push_with_lfs.sh
-|4,39,1,0,1745648933,"~/push_with_lfs.sh"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
--'  3  0  ~/.gitignore
-|4,39,3,0,1745648789,"~/.gitignore"
 -'  3  0  ~/.gitignore
 |4,39,3,0,1745648789,"~/.gitignore"
 -'  3  0  ~/.gitignore
@@ -143,54 +83,6 @@
 |4,39,1,2,1745648767,"~/.gitignore"
 -'  1  2  ~/.gitignore
 |4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648767,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
--'  1  2  ~/.gitignore
-|4,39,1,2,1745648763,"~/.gitignore"
 -'  1  2  ~/.gitignore
 |4,39,1,2,1745648763,"~/.gitignore"
 -'  1  2  ~/.gitignore
@@ -231,51 +123,147 @@
 |4,39,39,0,1745637083,"~/workflows/deploy.yml"
 -'  39  0  ~/workflows/deploy.yml
 |4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
--'  39  0  ~/workflows/deploy.yml
-|4,39,39,0,1745637083,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  1  0  ~/workflows/deploy.yml
+|4,39,1,0,1745637076,"~/workflows/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  31  6  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,31,6,1745637032,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
+-'  1  0  ~/workflows/ci-cd-pipeline.yml/deploy.yml
+|4,39,1,0,1745636982,"~/workflows/ci-cd-pipeline.yml/deploy.yml"
 
 # History of marks within files (newest to oldest):
 
-> ~/workflows/ci-cd-pipelines.yml
-	*	1745653987	0
-	"	32	0
-	^	32	0
-	.	31	69
-	+	31	69
-
-> ~/.gitattributes
-	*	1745653744	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	41
-	+	1	225
-	+	1	40
-	+	1	0
-	+	8	41
-	+	1	0
+> ~/recover_deleted_file.sh
+	*	1745654484	0
+	"	28	0
+	^	28	0
+	.	27	2
+	+	27	2
 
 > ~/push_with_lfs.sh
 	*	1745648951	0
